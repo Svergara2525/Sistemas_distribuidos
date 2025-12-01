@@ -1,0 +1,10 @@
+ {"tipo_e":"inv","op":"put","clave":"44","valor":"valor_27","n":1,"id":"pid_10400","t":1}
+ {"tipo_e":"resp","op":"put","clave":"44","valor":"valor_27","n":1,"t":2}
+ {"tipo_e":"inv","op":"get","clave":4,"valor":null,"n":2,"id":"pid_10400","t":3}
+ {"tipo_e":"resp","op":"get","clave":4,"valor":"lol_4","n":2,"t":4}
+ {"tipo_e":"inv","op":"put","clave":"110","valor":"valor_29","n":3,"id":"pid_10400","t":5}
+ {"tipo_e":"resp","op":"put","clave":"110","valor":"valor_29","n":3,"t":6}
+ {"tipo_e":"inv","op":"get","clave":10,"valor":null,"n":4,"id":"pid_10400","t":7}
+ {"tipo_e":"resp","op":"get","clave":10,"valor":"lol_10","n":4,"t":8}
+ {"tipo_e":"inv","op":"get","clave":9,"valor":null,"n":5,"id":"pid_10400","t":9}
+ {"tipo_e":"resp","op":"get","clave":9,"valor":"Eugene","n":5,"t":10}

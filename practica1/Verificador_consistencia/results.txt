@@ -1,0 +1,58 @@
+COMMAND: node atomicity.js eventos1.txt
+‣ RESULT FOR EVENT C5_1 is good
+‣ RESULT FOR EVENT C2_1 is good
+‣ RESULT FOR EVENT C3_1 is good
+‣ RESULT FOR EVENT C4_1 is good
+‣ RESULT FOR EVENT C6_1 is good
+‣ RESULT FOR EVENT C2_2 is good
+
+
+COMMAND: node atomicity.js eventos2.txt
+‣ RESULT FOR EVENT C5_1 is bad, there is no dictating write
+‣ RESULT FOR EVENT C2_1 is good
+‣ RESULT FOR EVENT C3_1 is good
+‣ RESULT FOR EVENT C4_1 is good
+‣ RESULT FOR EVENT C6_1 is good
+‣ RESULT FOR EVENT C2_2 is good
+
+
+COMMAND: node atomicity.js eventos3.txt
+‣ RESULT FOR EVENT C5_1 is good
+‣ RESULT FOR EVENT C2_1 is good
+‣ RESULT FOR EVENT C3_1 is good
+‣ RESULT FOR EVENT C4_1 is good
+‣ RESULT FOR EVENT C6_1 is bad, there is no dictating write
+‣ RESULT FOR EVENT C2_2 is bad, there is no dictating write
+
+
+COMMAND: node atomicity.js eventos4.txt
+‣ RESULT FOR EVENT C1_1 is good
+‣ RESULT FOR EVENT C1_2 is good
+‣ RESULT FOR EVENT C3_2 is good
+
+
+COMMAND: node atomicity.js eventos5.txt
+‣ RESULT FOR EVENT C1_1 is bad, there is no dictating write
+‣ RESULT FOR EVENT C1_2 is good
+‣ RESULT FOR EVENT C3_2 is good
+
+
+COMMAND: node atomicity.js eventos6.txt
+‣ RESULT FOR EVENT C1_1 is good
+‣ RESULT FOR EVENT C1_2 is good
+‣ RESULT FOR EVENT C3_2 is bad, there is no dictating write
+
+
+COMMAND: node atomicity.js eventos7.txt
+‣ RESULT FOR EVENT C1_1 is good
+‣ RESULT FOR EVENT C3_1 is good
+• Two forwards zones overlap [Z1-C2_1][Z1.f=5, Z1.s=10] and [Z2-C5_1][Z2.f=8, Z2.s=13]
+‣ RESULT FOR EVENT C6_1 is bad, zones conflict
+
+
+COMMAND: node atomicity.js eventos8.txt
+‣ RESULT FOR EVENT C3_1 is good
+‣ RESULT FOR EVENT C5_1 is good
+• A backward zone [Z1-C4_1][Z1.f=11, Z1.s=6] is contained inside a forward zone [Z2-C4_1][Z2.f=4, Z2.s=12]
+‣ RESULT FOR EVENT C1_1 is bad, zones conflict
+‣ RESULT FOR EVENT C6_1 is good
